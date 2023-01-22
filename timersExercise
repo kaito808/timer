@@ -1,0 +1,222 @@
+// Timers Exercise
+// 1. countdown
+
+function countdown(t){
+
+    let timer = setInterval(function(){
+
+        t--;
+
+        if (t<=0){
+            clearInterval(timer);
+            console.log("done!")
+        }
+
+        else{
+            console.log(t);
+        }
+
+    }, 1000)
+
+
+
+}
+
+countdown(10);
+
+
+// 2. randomGame
+
+
+let counter = 1;
+let dise = setInterval(function(){
+
+    
+    let num = Math.random();
+    
+    
+
+    if (num>.75){
+        clearInterval(dise);
+        console.log (`${counter}: ${num}`);
+        console.log(`It took ${counter} try/tries`);}
+        
+    else {
+        console.log (`${counter}: ${num}`);
+        counter++;}
+
+
+},1000);
+
+
+
+
+
+
+
+
+
+
+
+
+// function randomGame (){
+
+//     let counter = 0;
+
+//     let game = setInterval(function(){
+
+//     let num = Math.random();
+//         counter++;
+
+//         if (num>.75){
+//             clearInterval(game);
+//             console.log (`${counter}: ${num}`);
+//         }
+
+//         else console.log (`${counter}: ${num}`);
+
+//         }, 1000)
+
+
+// }
+
+
+
+// let counter = 0;
+// let num = Math.random();
+
+// counter++;
+
+// console.log (`${counter}: ${num}`);
+
+
+// let dise = setInterval(function(){
+
+//     let counter = 0;
+//     let num = Math.random();
+//     counter++;
+//     console.log (`${counter}: ${num}`);
+
+//     if (num>.75){
+//         clearInterval(dise);}
+        
+//     else {console.log (`${counter}: ${num}`);}
+
+
+// },1000);
+
+
+
+
+
+
+
+
+// let counter = 0;
+// let num = Math.random();
+// counter++;
+// console.log (`${counter}: ${num}`);
+
+
+
+
+
+
+
+
+
+
+
+// // function countdown(time){
+// //     let t
+// //     for (let i = time; i < 0; i--) {
+// //         setInterval(
+// //             console.log(time), 1000
+// //         )
+// //     }
+
+       
+
+
+
+// // }
+
+
+
+
+// // countdown(5);
+
+// function countdown(t){
+//     setTimeout(function(){
+
+//         for (let i = t; i<0; i--){
+//             console.log(t)
+//         }
+
+//     }
+
+//         , t*1000
+//         )
+// }
+
+// countdown(5);
+
+// // function display(time){
+// //     return time;
+// // }
+
+// // display("hi");
+
+
+// // const t = 4;
+// // for (let i = 4; i<0; i--){
+// //     console.log(i)
+// // };
+
+// function countdown(t){
+// // const t = 10;
+// for (let i = t; i>0; i){
+//     console.log(i)
+//     i--;}
+
+// }
+
+// countdown(6);
+
+
+
+// function countdown(t){
+//     // const t = 10;
+//     for (let i = t; i>0; i--){
+        
+//         setInterval(console.log(i)),1000}
+    
+//     }
+    
+//     countdown(6);
+    
+
+//     function countdown(t){
+//         // const t = 10;
+//         for (let i = t; i>0; i--){
+//             console.log(i)}};
+            
+
+            
+// function countDown(time){
+//   let timer = setInterval(function(){
+//     time--;
+//     if(time <= 0){
+//       clearInterval(timer);
+//       console.log('DONE!');
+//     }
+//     else {
+//       console.log(time);
+//     }
+
+//   },1000)
+// }
+
+// countdown(10)
+
+
